@@ -7,11 +7,12 @@ class App extends Component {
     this.state = {
       render: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = () => {
+  handleClick() {
     this.setState({ render: !this.state.render });
-  };
+  }
   render() {
     return (
       <div id="main">
